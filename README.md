@@ -1,7 +1,8 @@
 # AlignIO Demonstration (Biopython)
 
 This repository demonstrates how to use the AlignIO module from Biopython to read, manipulate, and analyze multiple sequence alignment (MSA) files.
-
+# **NOTE**
+This notebook assumes alignment has already been performed using tools like Clustal Omega, reflecting real-world bioinformatics workflows.
 # Features
 Load alignment files generated from external tools
 Parse Clustal format using AlignIO
@@ -13,7 +14,7 @@ Convert alignment formats
 📂 Project Structure
 .
 ├── alignIO.ipynb
-├── aligned.aln
+├── demo_protein.aln
 └── README.md
 
 # Requirements
@@ -21,7 +22,7 @@ pip install biopython
 
 # Input Data
 
-The alignment file (aligned.aln) is generated using:
+The alignment file (demo_protein.aln) is generated using:
 `Clustal Omega`
 
 `You must place the .aln file in the same directory as the notebook.`
@@ -34,7 +35,7 @@ Perform analysis (columns, conservation, slicing)
 
 # Key Concepts Covered
 Multiple Sequence Alignment (MSA)
-AlignIO.read() and AlignIO.parse()
+AlignIO.read()
 Alignment object manipulation
 Column-wise analysis
 Conservation detection
@@ -47,7 +48,7 @@ Input must be correctly formatted (e.g., Clustal format)
 # Example Usage
 from Bio import AlignIO
 
-alignment = AlignIO.read("aligned.aln", "clustal")
+alignment = AlignIO.read("demo_protein.aln", "clustal")
 
 print(alignment)
 
