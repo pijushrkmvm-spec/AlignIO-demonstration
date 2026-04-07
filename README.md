@@ -12,7 +12,7 @@ Convert alignment formats
 
 📂 Project Structure
 .
-├── alignio.ipynb
+├── alignIO.ipynb
 ├── aligned.aln
 └── README.md
 
